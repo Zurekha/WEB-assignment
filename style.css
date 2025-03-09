@@ -1,0 +1,22 @@
+body{
+    background-color:azure
+}
+div h1{
+    background-color: aqua;
+}
+div h3{
+    background-color: blanchedalmond;
+}
+article + h2{
+    background-color: red;
+}
+div +h2{
+    background-color:plum;
+}
+p:hover{
+    background-color: blueviolet;
+}
+p::first-letter{
+    font: size 25px;
+
+}

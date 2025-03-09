@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal information</legend>
+        <label for="f-name"> First Name:</label> <input type="text" name="fName" id="f-name"><br>
+           <label for="L-name"> Last Name:</label> <input type="text" name="LName" id="L-name"><br>
+
+        <label for="dob">Date of Birth:</label>  
+    <input type="date" id="dob" name="dob"><br><br>
+    <label for="email">Email Address:</label>  
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="phone">Phone Number:</label>  
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required><br><br>
+    <label>Select Gender:</label><br>
+    <input type="radio" name="gender" value="Male" checked>Male <br>
+    <input type="radio" name="gender" value="Female">Female <br>
+    <input type="radio" name="gender" value="Other">Other <br><br>
+    </fieldset>
+    <fieldset>
+        <legend> Education</legend>
+        <label for="course">Select Your Course:</label>  
+        <select id="course" name="course" required>
+            <option value="">-- Select a Course --</option>
+            <option value="computer_science">Computer Science</option>
+            <option value="business_admin">Business Administration</option>
+            <option value="law">Law</option>
+        <option value="arts">International Relations</option>
+    </select><br><br>
+    <h3>Previous Education Details</h3>
+
+    <label for="school">Previous School/College Name:</label>  
+    <input type="text" id="school" name="school" required><br><br>
+    <label for="grades">Grades/CGPA:</label>  
+    <input type="text" id="grades" name="grades" placeholder="e.g. 3.8/4.0 or 85%" required><br><br>
+       </fieldset>
+       <fieldset>
+       <legend>Declaration and signature</legend>
+       <label>
+        <input type="checkbox" name="declaration" required>
+        I hereby declare that the information provided above is true and correct to the best of my knowledge.
+    </label><br><br>
+
+    <label for="signature">Signature (Type Your Full Name as Digital Signature):</label>  
+    <input type="text" id="signature" name="signature" placeholder="Enter Full Name" required><br><br>
+
+    <label for="upload_signature">Upload Handwritten Signature (Optional):</label>  
+    <input type="file" id="upload_signature" name="upload_signature" accept="image/*"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
